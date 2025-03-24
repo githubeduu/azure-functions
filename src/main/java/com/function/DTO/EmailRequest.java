@@ -1,4 +1,4 @@
-package com.function;
+package com.function.DTO;
 
 public class EmailRequest {
     private String correo;
