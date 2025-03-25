@@ -2,6 +2,8 @@ package com.function.DTO;
 
 public class UsuarioDTO {
     private Long id;
+    private String username;
+    private String password;
     private String nombre;
     private String rut;
     private String direccion;
@@ -11,6 +13,14 @@ public class UsuarioDTO {
     // Getters
     public Long getId() {
         return id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public String getNombre() {
@@ -36,6 +46,14 @@ public class UsuarioDTO {
     // Setters
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void setNombre(String nombre) {
