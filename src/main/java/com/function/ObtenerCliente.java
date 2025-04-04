@@ -35,7 +35,9 @@ public class ObtenerCliente {
         }
 
         // 2. Conexión directa a Oracle (sin variables de entorno)
-        String walletPath = System.getProperty("java.io.tmpdir");
+        String tmpDir = System.getProperty("java.io.tmpdir");
+        String walletPath = tmpDir.contains("\\") ? tmpDir.replace("\\", "/") : tmpDir;
+
         String oracleUrl = "jdbc:oracle:thin:@et2xa97ns8rti1vt_tp?TNS_ADMIN=" + walletPath;
         String oracleUser = "duoc_fullstack";
         String oraclePass = "Eduardocr#2610";

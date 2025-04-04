@@ -78,4 +78,9 @@ public class Email {
             return request.createResponseBuilder(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al enviar el correo").build();
         }
     }
+
+    public void send(String correo, String nombreMascota) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'send'");
+    }
 }
